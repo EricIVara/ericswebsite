@@ -1,0 +1,26 @@
+/* src/components/Home.css */
+.home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
