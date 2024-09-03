@@ -64,7 +64,7 @@ function About() {
 
       {/* Footer */}
       <div className="about-footer">
-        <p>&copy; 2024 Eric Vară. All rights reserved.</p>
+        <p>&copy; 2024 Eric Vara. All rights reserved.</p>
       </div>
     </div>
   );
