@@ -1,18 +1,20 @@
-// src/components/Header.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <header className="header">
       <nav className="navbar">
-        <div className="nav-logo">Eric's Website</div>
+        <Link to="/" className="nav-logo">
+          Eric's Website
+        </Link>
         <ul className="nav-links">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <a href="#pricing">Pricing</a>

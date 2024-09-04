@@ -37,19 +37,19 @@ function About() {
         <div className="timeline-item">
           <h3>2015</h3>
           <p>Airborne Training at Fort Benning, GA</p>
+        </div>
+        <div className="timeline-item">
+          <h3>2015-2018</h3>
+          <p>Served at Fort Bragg, NC</p>
           <img src={armyLogo} alt="Airborne Logo" className="timeline-logo" />
         </div>
         <div className="timeline-item">
-          <h3>2016-2018</h3>
-          <p>Served at Fort Bragg, NC</p>
-        </div>
-        <div className="timeline-item">
-          <h3>2019-2020</h3>
+          <h3>2018-2022</h3>
           <p>Studied Computer Science at Mohave Community College</p>
           <img src={mccLogo} alt="MCC Logo" className="timeline-logo" />
         </div>
         <div className="timeline-item">
-          <h3>2021-2023</h3>
+          <h3>2022-2024</h3>
           <p>
             Completed Bachelor’s in Information Technology at the University of
             Arizona
