@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./Home.module.css";
 import ProfilePic from "../assets/images/ProfilePic.png";
 
 function Home() {

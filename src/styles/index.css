@@ -1,31 +1,37 @@
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #007bff;
-  --background-color: #f4f6f7;
-  --secondary-color-hover: #0056b3;
-  --text-color: #2c3e50;
-  --font-family: "Roboto", sans-serif;
-  --header-height: 60px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "./variables.css";
+@import "../components/Navbar.module.css";
+@import "../components/Home.module.css";
+@import "../components/About.module.css";
 
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Links */
 a {
-  text-decoration: none;
-  color: inherit;
+  color: var(--primary-color);
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color-hover);
+  transform: var(--button-hover-transform);
 }

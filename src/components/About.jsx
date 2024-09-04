@@ -1,20 +1,15 @@
 import React from "react";
-import "./About.css";
-// import schoolBanner from "../assets/images/school_banner.jpg";
-import armyLogo from "../assets/images/airborne.jpg";
-import signature from "../assets/images/signature.png";
-import mccLogo from "../assets/images/mcc.jpg";
-import uaLogo from "../assets/images/uofa.jpg";
+import "./About.module.css";
+import ProfilePic from "../assets/images/ProfilePic.png";
 
 function About() {
   return (
     <div className="about-container">
       {/* Hero Section */}
       <div className="hero-section">
-        <img src={signature} alt="Banner" className="banner-image" />
+        <img src={ProfilePic} alt="Eric Vara" className="profile-pic" />
         <div className="intro">
           <h1>Eric Vara</h1>
-          <img src={signature} alt="Signature" className="signature-image" />
           <p>Information Technology Specialist & Military Veteran</p>
         </div>
       </div>
@@ -41,12 +36,10 @@ function About() {
         <div className="timeline-item">
           <h3>2015-2018</h3>
           <p>Served at Fort Bragg, NC</p>
-          <img src={armyLogo} alt="Airborne Logo" className="timeline-logo" />
         </div>
         <div className="timeline-item">
           <h3>2018-2022</h3>
           <p>Studied Computer Science at Mohave Community College</p>
-          <img src={mccLogo} alt="MCC Logo" className="timeline-logo" />
         </div>
         <div className="timeline-item">
           <h3>2022-2024</h3>
@@ -54,17 +47,7 @@ function About() {
             Completed Bachelor’s in Information Technology at the University of
             Arizona
           </p>
-          <img
-            src={uaLogo}
-            alt="University of Arizona Logo"
-            className="timeline-logo"
-          />
         </div>
-      </div>
-
-      {/* Footer */}
-      <div className="about-footer">
-        <p>&copy; 2024 Eric Vara. All rights reserved.</p>
       </div>
     </div>
   );
