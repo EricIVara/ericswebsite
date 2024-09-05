@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.module.css";
+import "./Projects.module.css";
 
 function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -52,7 +53,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a href="#pricing" className="nav-link">
+            <a href="/projects" className="nav-link">
               Projects
             </a>
           </li>
