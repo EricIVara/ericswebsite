@@ -1,8 +1,12 @@
+/* Import Global Variables */
 @import "./variables.css";
+
+/* Import Component-Specific Styles */
 @import "../components/Navbar.module.css";
 @import "../components/Home.module.css";
 @import "../components/About.module.css";
 
+/* Global Styles */
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
