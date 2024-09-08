@@ -27,11 +27,13 @@
 
 /* Individual project card */
 .card {
-  background-color: white;
+  background-color: var(
+    --card-background-color
+  ); /* Dynamic background color based on theme */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .card:hover {
@@ -51,11 +53,13 @@
 .cardContent h2 {
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--text-color); /* Use dynamic text color based on theme */
   margin-bottom: 5px;
 }
 
 .cardContent p {
-  color: #888;
+  color: var(--text-color); /* Use dynamic text color based on theme */
+  opacity: 0.85; /* Slightly reduce opacity to differentiate description */
 }
 
 /* github repos */

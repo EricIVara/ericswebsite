@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Projects.module.css";
 
-// Import images for all projects dynamically
-// (React can't dynamically import without knowing the file names beforehand,
-// so we will manually import all known project images)
-
 import AIDigitRecognitionImg from "../assets/images/AI-Digit-Recognition-App.png";
 import BlogImg from "../assets/images/Blog.png";
 import DsaImg from "../assets/images/dsa.png";
@@ -16,7 +12,6 @@ import ReactMovieSearchAppImg from "../assets/images/React-MovieSearch-App.png";
 import ReactItAppImg from "../assets/images/ReactIt-app.png";
 import ZombieApocalypseAppImg from "../assets/images/Zombie-Apocalypse-app.png";
 
-// Replace with your GitHub username and optionally your personal access token
 const GITHUB_USERNAME = "EricIVara";
 const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
 
