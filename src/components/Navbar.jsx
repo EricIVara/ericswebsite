@@ -53,14 +53,16 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a href="/projects" className="nav-link">
+            <Link to="/projects" className="nav-link">
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#Resume" className="nav-link">
+            <Link to="/resume" className="nav-link">
+              {" "}
+              {/* Update this to link to the Resume page */}
               Resume
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#contact" className="nav-link">
