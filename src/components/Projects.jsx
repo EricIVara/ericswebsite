@@ -44,7 +44,7 @@ const Projects = () => {
         return EZTechMovieImg;
       case "GroupMovieApp":
         return GroupMovieAppImg;
-      case "MyWebsite":
+      case "ericswebsite":
         return MyWebsiteImg;
       case "React-Employee-Management-Dashboard":
         return ReactEmployeeDashboardImg;
@@ -55,7 +55,7 @@ const Projects = () => {
       case "Zombie-Apocalypse-app":
         return ZombieApocalypseAppImg;
       default:
-        return "https://source.unsplash.com/random/400x300"; // Fallback to Unsplash if image not found
+        return "https://source.unsplash.com/random/400x300";
     }
   };
 
