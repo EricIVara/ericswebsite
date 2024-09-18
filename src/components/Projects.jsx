@@ -62,7 +62,7 @@ const Projects = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>All Projects</h1>
+        <h1>Projects</h1>
       </div>
       <div className={styles.grid}>
         {projects.map((project) => (
