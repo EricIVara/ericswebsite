@@ -9,12 +9,12 @@
 
 .container {
   background-color: var(--primary-color);
-  padding: 40px 20px; /* Reduced padding on sides to align content better */
+  padding: 40px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 750px; /* Adjusted to reduce extra width */
-  margin: 0 auto; /* Centering */
+  max-width: 750px;
+  margin: 0 auto;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .inputGroup {
-  margin-bottom: 15px; /* Reduced margin between fields */
+  margin-bottom: 15px;
 }
 
 .label {
@@ -44,7 +44,7 @@
 
 .input,
 .textarea {
-  width: calc(100% - 30px); /* Adjusted width to align better */
+  width: calc(100% - 30px);
   padding: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
@@ -80,9 +80,23 @@
   transform: var(--button-hover-transform);
 }
 
+.successMessage {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.errorMessage {
+  color: #f44336;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
-    padding: 20px 10px; /* Further reduce padding for smaller screens */
+    padding: 20px 10px;
   }
 }
