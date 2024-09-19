@@ -1,11 +1,6 @@
 @import "../styles/variables.css";
 
 .contactSection {
-  background: linear-gradient(
-    to bottom,
-    var(--primary-color),
-    var(--secondary-color)
-  );
   padding: 60px 0;
   display: flex;
   justify-content: center;
@@ -13,19 +8,20 @@
 }
 
 .container {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 600px;
+  max-width: 800px; /* Matches width of other components */
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .title {
-  color: var(--primary-color);
+  color: white;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
   font-family: var(--font-family);
 }
 
@@ -41,14 +37,14 @@
 .label {
   display: block;
   margin-bottom: 5px;
-  font-size: 1.1rem;
-  color: var(--text-color);
+  font-size: 1.2rem;
+  color: white;
 }
 
 .input,
 .textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -68,10 +64,10 @@
 }
 
 .submitButton {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 15px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -81,4 +77,11 @@
 .submitButton:hover {
   background-color: var(--secondary-color-hover);
   transform: var(--button-hover-transform);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
 }
