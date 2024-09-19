@@ -1,5 +1,6 @@
-/* Navbar Container */
+@import "../styles/variables.css";
 
+/* Navbar Container */
 .header {
   background-color: var(--background-color);
   height: var(--header-height);
@@ -57,6 +58,11 @@
   background-color: var(--primary-color);
   color: white;
   transform: scale(1.05);
+}
+
+.nav-link.active {
+  background-color: var(--secondary-color-hover);
+  color: white;
 }
 
 /* Navbar Buttons */

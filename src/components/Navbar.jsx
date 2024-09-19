@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.module.css";
-import "./Projects.module.css";
 
 function Navbar() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -59,15 +58,13 @@ function Navbar() {
           </li>
           <li>
             <Link to="/resume" className="nav-link">
-              {" "}
-              {/* Update this to link to the Resume page */}
               Resume
             </Link>
           </li>
           <li>
-            <a href="#contact" className="nav-link">
+            <Link to="/contact" className="nav-link">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="nav-actions">
