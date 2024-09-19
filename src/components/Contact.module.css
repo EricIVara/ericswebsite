@@ -9,11 +9,12 @@
 
 .container {
   background-color: var(--primary-color);
-  padding: 40px;
+  padding: 40px 20px; /* Reduced padding on sides to align content better */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 800px; /* Matches width of other components */
+  max-width: 750px; /* Adjusted to reduce extra width */
+  margin: 0 auto; /* Centering */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .inputGroup {
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin between fields */
 }
 
 .label {
@@ -43,7 +44,7 @@
 
 .input,
 .textarea {
-  width: 100%;
+  width: calc(100% - 30px); /* Adjusted width to align better */
   padding: 15px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
@@ -82,6 +83,6 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 20px 10px; /* Further reduce padding for smaller screens */
   }
 }
