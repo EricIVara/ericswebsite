@@ -17,3 +17,10 @@
   border-radius: 8px;
   margin-top: 20px;
 }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}

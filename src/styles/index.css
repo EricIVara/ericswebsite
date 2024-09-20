@@ -39,3 +39,10 @@ button:hover {
   background-color: var(--secondary-color-hover);
   transform: var(--button-hover-transform);
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+}
