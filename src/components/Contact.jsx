@@ -49,7 +49,7 @@ function Contact() {
   return (
     <section className={styles.contactSection}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Contact Us</h2>
+        <h2 className={styles.title}>Contact Me</h2>
 
         {/* Display success or error message */}
         {isSubmitted && (

@@ -66,9 +66,16 @@ function Navbar() {
               Contact
             </Link>
           </li>
+
+          {/* Dark mode button will be inside the dropdown in mobile */}
+          {isMenuOpen && (
+            <button onClick={toggleDarkMode} className="dark-mode-toggle">
+              {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+            </button>
+          )}
         </ul>
         <div className="nav-actions">
-          <button className="nav-button">Start Building</button>
+          {/* Hidden in mobile, visible on larger screens */}
           <button onClick={toggleDarkMode} className="dark-mode-toggle">
             {isDarkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
           </button>

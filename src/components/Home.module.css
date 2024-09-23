@@ -1,33 +1,71 @@
 .home {
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px; /* Reduced padding */
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Moved content up */
+  align-items: center;
+  gap: 20px;
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--secondary-color);
   letter-spacing: 2px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .title {
-  font-size: 3rem;
-  color: var(--secondary-color);
-  margin-bottom: 30px;
+  font-size: 4rem;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .profile-pic {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border: 5px solid var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color-hover);
+  transform: scale(1.05);
 }
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .profile-pic {
