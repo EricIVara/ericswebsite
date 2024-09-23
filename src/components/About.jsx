@@ -5,7 +5,7 @@ import ProfilePic from "../assets/images/ProfilePic.png";
 function About() {
   return (
     <div className="about-container">
-      {/* Hero Section */}
+      {/* Hero Sections */}
       <div className="hero-section">
         <img src={ProfilePic} alt="Eric Vara" className="profile-pic" />
         <div className="intro">
