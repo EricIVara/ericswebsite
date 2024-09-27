@@ -8,11 +8,13 @@ function Home() {
     <section className="home" id="home">
       <h2 className="subtitle">Information Technology Specialist</h2>
       <h1 className="title">Eric Vara</h1>
-      <img
-        src={ProfilePic}
-        alt="Eric's profile picture"
-        className="profile-pic"
-      />
+      <Link to="/about">
+        <img
+          src={ProfilePic}
+          alt="Eric's profile picture"
+          className="profile-pic"
+        />
+      </Link>
       <Link to="/contact">
         <button className="cta-button">Contact Me</button>
       </Link>
