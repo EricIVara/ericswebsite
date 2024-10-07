@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImage from "../assets/images/resume.png"; // Assuming the image is in your assets folder
+import resumeImage from "../assets/images/resume.png";
 import styles from "./Resume.module.css";
 
 const Resume = () => {

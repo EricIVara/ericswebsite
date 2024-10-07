@@ -26,11 +26,6 @@
 }
 
 /* Intro Section */
-.intro {
-  position: relative;
-  color: white;
-}
-
 .intro h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
@@ -53,6 +48,8 @@
 }
 
 .timeline-item {
+  display: flex;
+  align-items: center;
   margin: 20px 0;
   padding: 20px;
   background-color: var(--primary-color);
@@ -63,8 +60,22 @@
 }
 
 .timeline-item:hover {
-  transform: translateY(-5px);
+  transform: var(--button-hover-transform);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-icon {
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.timeline-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.timeline-content p {
+  font-size: 1.2em;
 }
 
 /* Mobile Adjustments */
@@ -75,5 +86,14 @@
 
   .intro h1 {
     font-size: 2rem;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-icon {
+    margin-bottom: 10px;
   }
 }
