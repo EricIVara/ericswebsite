@@ -22,11 +22,6 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Log the environment variables for debugging
-    console.log(import.meta.env.VITE_EMAILJS_SERVICE_ID);
-    console.log(import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-    console.log(import.meta.env.VITE_EMAILJS_USER_ID);
-
     // Send email using EmailJS with Vite environment variables
     emailjs
       .send(
@@ -103,6 +98,47 @@ function Contact() {
             Send Message
           </button>
         </form>
+
+        {/* New Contact Information Section */}
+        <div className={styles.contactInfo}>
+          <h3 className={styles.infoTitle}>My Contact Information</h3>
+          <ul className={styles.infoList}>
+            <li>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:vara.ada91@gmail.com" className={styles.link}>
+                vara.ada91@gmail.com
+              </a>
+            </li>
+            <li>
+              <strong>Phone:</strong>{" "}
+              <a href="tel:+19109778612" className={styles.link}>
+                (910) 977-8612
+              </a>
+            </li>
+            <li>
+              <strong>LinkedIn:</strong>{" "}
+              <a
+                href="https://www.linkedin.com/in/ericivara"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                www.linkedin.com/in/ericivara
+              </a>
+            </li>
+            <li>
+              <strong>GitHub:</strong>{" "}
+              <a
+                href="https://github.com/EricIVara"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                github.com/EricIVara
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

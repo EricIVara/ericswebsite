@@ -94,6 +94,37 @@
   text-align: center;
 }
 
+/* New styles for contact information */
+.contactInfo {
+  margin-top: 30px;
+  color: white;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.infoList {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.infoList li {
+  margin-bottom: 10px;
+}
+
+.link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--secondary-color-hover);
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
