@@ -1,4 +1,4 @@
-import resumeImage from "../assets/images/resume.png";
+import profileImage from "../assets/images/ProfilePic.png";
 import styles from "./Resume.module.css";
 
 const experience = [
@@ -57,7 +57,7 @@ const Resume = () => (
     </div>
     <article className={styles.resume} aria-label="Eric Vara Resume">
       <aside className={styles.sidebar}>
-        <div className={styles.portrait} style={{ backgroundImage: `url(${resumeImage})` }} role="img" aria-label="Eric Vara" />
+        <img className={styles.portrait} src={profileImage} alt="Eric Vara" />
         <section>
           <h3>Contact</h3>
           <h4>Phone</h4><p><a href="tel:9109778612">910-977-8612</a></p>
